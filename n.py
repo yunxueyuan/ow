@@ -24,7 +24,7 @@ headers={
 }
 
 for i in range(1800):
-    time.sleep(10.5)
+    time.sleep(10.1)
     millis = int(round(time.time() * 1000))
     data='channel_id=07404dc6-bedb-11ec-9673-52540014416d&app_id=app3z0bz5Gy7466&user_id=u_625cfb613fa0c_zkB5dNxiva&resource_id=l_6083fde1e4b0d4eb0394903b&product_id=&agent_type=3&content_app_id=&resource_type=4&display_state=0&is_try=0&is_first=0&visit=0&progress=0&is_play=1&live_type=2&live_state=0&alive_state=3&org_learn_progress=&eventName=autoDot&version=1.5.10&packet_number=4&client_time=%d&time_interval=10&report_rate=10000'%(millis)
     x = requests.post(url, data = data, headers=headers)
