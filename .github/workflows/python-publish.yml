@@ -1,9 +1,6 @@
 name: "Pixiv Crawler"
 
 on: 
-  schedule:
-    - cron: '38 5 * * *'
-    - cron: '40 11 * * *'
   workflow_dispatch:
   
 env:
